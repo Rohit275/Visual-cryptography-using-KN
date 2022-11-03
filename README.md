@@ -4,22 +4,18 @@ In this project we take any image which is to be shared secretly. This image is 
 
 ![alt tag](https://raw.githubusercontent.com/srajat/Visual-Cryptography-Using-K-N-Secret-Sharing/master/images/Screenshot%20from%202017-07-02%2014:57:42.png)
 
-
-
 ## Table of contents
 
 - [Installation](#installation)
-    - [Prerequisites](#prerequisites)
-    - [Using MATLAB 2015a](#using-matlab-2015a)
-    - [Algorithms Used](#algo)
+  - [Prerequisites](#prerequisites)
+  - [Using MATLAB 2015a](#using-matlab-2015a)
+  - [Algorithms Used](#algo)
 - [Observations](#observe)
-    - [AES encryption results](#aes)
-- [Graphical User Interface](#gui)  
-- [Applications](#applications)  
+  - [AES encryption results](#aes)
+- [Graphical User Interface](#gui)
+- [Applications](#applications)
 - [Contributers](#contributers)
 - [Links](#links)
-
-
 
 ## Installation <a name='installation'></a>
 
@@ -28,6 +24,7 @@ In this project we take any image which is to be shared secretly. This image is 
 1. Matlab 2015a or later
 
 ### Using Matlab 2015a <a name='using-matlab-2015a'></a>
+
 <pre>
 1. Copy all matlab files in a folder to your computer
 2. Open Matlab 2015a
@@ -39,11 +36,9 @@ In this project we take any image which is to be shared secretly. This image is 
 ### Algorithms Used <a name='algo'></a>
 
 Implementing 2 visual cryptographic algorithms namely,
+
 1. Visual Cryptography by Naor and Shamir for Monochrome images
 2. KN Sharing Scheme for colored images
-
-
-
 
 ## Observations <a name='observe'></a>
 
@@ -61,6 +56,7 @@ shares of all the generated shares, the reconstructed image is:
 ![alt tag](https://raw.githubusercontent.com/srajat/Visual-Cryptography-Using-K-N-Secret-Sharing/master/images/Screenshot%20from%202017-07-02%2014:58:05.png)
 
 ### AES encryption results <a name='aes'></a>
+
 A symmetric key based encryption (AES encryption) at both the ends of KN Shares
 Algorithm is added to make the image more secure.
 
@@ -70,14 +66,13 @@ Thus, after encrypting the original image with AES first, and then, regenerating
 shares gives more better and noisy image. Now, the image will require at-least k shares
 along with the symmetric key in order to decrypt the image to its original form.
 
-
-
-
 ## Graphical User Interface <a name='gui'></a>
+
 GUI for the program is made using Matlab 2015a. It has all the functionalities required
 for Encryption and Decryption. Following are the steps to run the GUI :-
 
 ### 1. Step 1:
+
 Execute command run knshare in matlab terminal. The KNshare main screen
 appears.
 
@@ -118,10 +113,8 @@ After sometime, the unencrypted image appears on the right. It is same as the or
 inal image. After successful completion the message appears "Image Successfully
 Decrypted".
 
-
-
-
 ## Applications <a name='applications'></a>
+
 Following are some of the areas in which our project can be helpful -
 
 • DISTRIBUTED SYSTEMS
@@ -137,19 +130,3 @@ It is obvious that transferring our data through N channels is more secure than
 transferring all of it through one channel. We can use the above algorithm to
 encrypt and break data into N different parts and transfer the data simultaneously
 through N channels. End user can get K shares and ignore the other N − K shares.
-
-
-
-
-## Contributers <a name='contributers'></a>
-* Rajat Saxena
-* Satyam Poddar
-* Pranav Pandey
-* Ankush Jangid
-* Divyesh Soni
-
-## Links <a name='links'></a>
-
-Visit me:     [Rajat Saxena](http://www.rajatsaxena.me/)
-
-Contact me:     <rajat8171@gmail.com>
